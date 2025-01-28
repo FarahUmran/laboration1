@@ -21,11 +21,22 @@
         <h1>Beskrivning av arbetsprocessen</h1>
         <p>
             <b>Beskriv din arbetsprocess</b>
+            Jag började "projektet" med att skapa en webbplats med HTML, CSS och enkel JS kod. Jag versionshanterade min webbplats under tiden jag byggde upp den.
 
-            Skapa en undersida i webbplatsen där du i detalj beskriver hur din arbetsprocess för utveckling och
-            publicering fungerar.
-
-            Beskriv vad som är automatiserat och vilka verktyg du använt för detta.
+            sedan följde jag stegen som finns i videon i teori o läsanvisning. Där började jag. med att skapa nytt npm projekt .. npm init.
+            Därefter laddade jag ner parcel-paketet och såg till att lagra den med --save-dev.
+            Då fick jag node-modules installerad som i sin tur innehåller massa olika paket som inte behöver versionshanteras därför skapade .gitignore fil och lade node_modules där.
+            Jag kunde också ha lagt dist där men det glömde jag att göra.
+            
+            Sen skapde jag en src katalog som parcel använder som standard .. där lade jag min webbplats-filer vilka är hrml, css och js samt bilderna
+            
+            I min packig.json katalog lade jag till source (src) och scripts (start/build)  
+            när jag var klar med det och var färdig för att publicera min plats då körde jag: npm run build då packaterades mina webbplatsfiler och de är också optimerade.
+            Där var jag klar med användning av parcel och packetering 
+            
+            
+            För publicering av webbplatsen valde jag Netlify, eftersom det var första gången jag använde mig av netlify började jag med att skapa ett konto där och konfiguera den med mitt github konto. Sen valde jag att skapa en ny webbplats.
+            Där valde jag mina inställningar och tryckte på deploy. Då var webbplatsen färdig och plublicerad.
         </p>
     </main>
 
