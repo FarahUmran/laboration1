@@ -1,0 +1,107 @@
+ /* Add a black background color to the top navigation */
+ .nav {
+    background-color: #e8dac6;
+    overflow: hidden;
+  }
+  
+  /* Style på navigeringen */
+  .nav a {
+    float:left;
+    color: #171515;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /*färg när man hover */
+  .nav a:hover {
+    background-color: #f4eeee;
+    color: black;
+ 
+  }
+
+  
+  ul {
+    list-style-type: none;
+}
+
+
+.text {
+    background-color: #fafaf4;
+    height: auto;
+    margin-left: 10%;
+    margin-right: 20%;
+    padding: 3%; 
+    line-height: 1.6em;
+    width: 70%; /* Bildens bredd kommer att vara 50% av föräldraelementets bredd */
+    
+
+}
+
+h1 {
+    margin-top: 2%;
+    text-align: center;
+}
+
+img {
+    width: 400px;
+    padding: 2%;
+}
+
+.grid {
+    /* margin-left: 20%;
+    margin-right: 30%; */
+    display: flex;
+    justify-items: center;
+    
+}
+
+
+/* Grundläggande reset */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* döljer text som visas sen när man trycker på knappen */
+.hidden {
+    display: none;
+}
+
+button {
+    padding: 1%;
+    background-color: rgb(186, 176, 165);
+    font-size: medium;
+    border-radius: 20%;
+}
+
+/* Styling för stora skärmar */
+@media screen and (min-width: 601px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Två kolumner med lika breda spalter */
+        
+    }
+
+    img {
+        width: 70%; /* Bildens bredd kommer att vara 50% av föräldraelementets bredd */
+        height: auto; /* Bibehåller bildens proportioner */
+      
+    }
+
+    .text {
+        width: 70%; /* Bildens bredd kommer att vara 50% av föräldraelementets bredd */
+        height: auto; /* Bibehåller bildens proportioner */
+      
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* en kolumr */
+       
+    }
+
+}
