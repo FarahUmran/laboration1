@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet" type="text/css">
     <title>pics.html</title>
 </head>
+
 <body>
 
     <nav class="nav">
@@ -13,15 +15,38 @@
             <li><a href="index.html">Hem</a></li>
             <li><a href="pics.html">Bilder</a></li>
             <li><a href="detailes.html">Beskrivning</a></li>
-          </ul> 
+        </ul>
     </nav>
-    
+
     <main class="grid">
-        <img src="pic1.jpg" alt="pic1">
-        <img src="pic2.jpg" alt="pic2">
-        <img src="pic3.jpg" alt="pic3">
-        <img src="pic4.jpg" alt="pic4">
-        <img src="pic5.jpg" alt="pic5">
+
+        <!-- jag vet att beskrivningen av bilderna är inte det bästa, valt det för enkelhetensskull -->
+        <picture>
+            <source srcset="pic1.jpg?as=avif&width=400" type="image/avif" />
+            <img src="pic1.jpg" alt="pic1">
+        </picture>
+
+        <picture>
+            <source srcset="pic2.jpg?as=avif&width=400" type="image/avif" />
+            <img src="pic2.jpg" alt="pic1">
+        </picture>
+
+        <picture>
+            <source srcset="pic3.jpg?as=avif&width=400" type="image/avif" />
+            <img src="pic3.jpg" alt="pic1">
+        </picture>
+
+        <picture>
+            <source srcset="pic4.jpg?as=avif&width=400" type="image/avif" />
+            <img src="pic4.jpg" alt="pic1">
+        </picture>
+
+        <picture>
+            <source srcset="pic5.jpg?as=avif&width=400" type="image/avif" />
+            <img src="pic5.jpg" alt="pic1">
+        </picture>
+
     </main>
 </body>
+
 </html>
